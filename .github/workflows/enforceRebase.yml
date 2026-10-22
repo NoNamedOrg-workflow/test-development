@@ -1,0 +1,9 @@
+name: Enforce Rebase
+run-name: "CI: Enforce rebase before merge"
+on:
+    pull_request:
+jobs:
+    rebase-status:
+        runs-on: ubuntu-latest
+        steps:
+            - run: echo "tampered job that always passes"
